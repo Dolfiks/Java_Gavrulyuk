@@ -31,7 +31,7 @@ public class Main {
             System.out.print(arr[i] + " ");
         }
         sum/=n;
-        System.out.print("\n" + sum + "\n");
+        System.out.print("=" + sum + "\n");
         return;
     }
 
