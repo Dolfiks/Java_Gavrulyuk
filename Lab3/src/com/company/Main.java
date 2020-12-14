@@ -22,16 +22,7 @@ public class Main {
         int[] arr = new int[n];
         Random rand = new Random();
 
-        float sum= 0;
-
-        for(int i = 0; i < n; i++)
-        {
-            arr[i] = rand.nextInt(10);
-            sum+=arr[i];
-            System.out.print(arr[i] + " ");
-        }
-        sum/=n;
-        System.out.print("=" + sum + "\n");
+        System.out.print("\n" + Arrays.stream(arr).map(a -> a = rand.nextInt(10)).average().getAsDouble());
         return;
     }
 
